@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>cp_powerhouse</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Title>CP PowerHouse</Title>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>copyright to powerhouse team</Copyright>
+    <FileVersion>0.0.1</FileVersion>
+    <ApplicationIcon>Views\Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\clock.png" />
+    <None Remove="Views\close_btn.png" />
+    <None Remove="Views\codeforces.png" />
+    <None Remove="Views\contest_icn.png" />
+    <None Remove="Views\minimize_btn.png" />
+    <None Remove="Views\profile.png" />
+    <None Remove="Views\reload.png" />
+    <None Remove="Views\Resources\bubble.wav" />
+    <None Remove="Views\Resources\clock.png" />
+    <None Remove="Views\Resources\close_btn.png" />
+    <None Remove="Views\Resources\codeforces.png" />
+    <None Remove="Views\Resources\contest_icn.png" />
+    <None Remove="Views\Resources\default.wav" />
+    <None Remove="Views\Resources\Image1.png" />
+    <None Remove="Views\Resources\internet.png" />
+    <None Remove="Views\Resources\loading.gif" />
+    <None Remove="Views\Resources\minimize_btn.png" />
+    <None Remove="Views\Resources\overlays.png" />
+    <None Remove="Views\Resources\profile.png" />
+    <None Remove="Views\Resources\reload.png" />
+    <None Remove="Views\Resources\search.png" />
+    <None Remove="Views\Resources\select.png" />
+    <None Remove="Views\Resources\server.png" />
+    <None Remove="Views\Resources\settings.png" />
+    <None Remove="Views\Resources\settings_dark.png" />
+    <None Remove="Views\Resources\task-list_2.png" />
+    <None Remove="Views\Resources\ticket_bg.png" />
+    <None Remove="Views\Resources\title.png" />
+    <None Remove="Views\Resources\tk.png" />
+    <None Remove="Views\Resources\user-friends.png" />
+    <None Remove="Views\Resources\uva.png" />
+    <None Remove="Views\settings.png" />
+    <None Remove="Views\task-list_2.png" />
+    <None Remove="Views\ticket].png" />
+    <None Remove="Views\title.png" />
+    <None Remove="Views\user-friends.png" />
+    <None Remove="Views\uva.png" />
+    <None Remove="Views\vecteezy_clock-icon-design-element-logo-element-illustration-clock_5439435.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Resources\bubble.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Resources\default.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Resource Include="Views\Resources\internet.png" />
+    <Resource Include="Views\Resources\clock.png" />
+    <Resource Include="Views\Resources\close_btn.png" />
+    <Resource Include="Views\Resources\codeforces.png" />
+    <Resource Include="Views\Resources\contest_icn.png" />
+    <Resource Include="Views\Resources\Image1.png" />
+    <Resource Include="Views\Resources\loading.gif" />
+    <Resource Include="Views\Resources\minimize_btn.png" />
+    <Resource Include="Views\Resources\overlays.png" />
+    <Resource Include="Views\Resources\profile.png" />
+    <Resource Include="Views\Resources\reload.png" />
+    <Resource Include="Views\Resources\search.png" />
+    <Resource Include="Views\Resources\select.png" />
+    <Resource Include="Views\Resources\server.png" />
+    <Resource Include="Views\Resources\settings.png" />
+    <Resource Include="Views\Resources\settings_dark.png" />
+    <Resource Include="Views\Resources\task-list_2.png" />
+    <Resource Include="Views\Resources\ticket_bg.png" />
+    <Resource Include="Views\Resources\title.png" />
+    <Resource Include="Views\Resources\tk.png" />
+    <Resource Include="Views\Resources\user-friends.png" />
+    <Resource Include="Views\Resources\uva.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Resources\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Views\Resources\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
